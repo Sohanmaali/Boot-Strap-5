@@ -1,34 +1,71 @@
-.contener-fluid {
+.container-fluid {
   background-color: blue;
-  border: 2px solid;
+  border: 5px solid;
 }
-.contener {
-  background-color: blue;
-  border: 2px solid;
-  min-height: 200px;
+* {
+  margin: 0;
+  padding: 0;
 }
+.container {
+  /* background-color: blue; */
+  border: 5px solid;
+  /* min-height: 200px; */
+}
+
+.container-height {
+  min-height: 100px;
+}
+
 .row {
-  border: 3px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .box-1 {
   min-height: 150px;
   background-color: red;
 }
+
+.red {
+  background-color: red;
+}
+
 .box-2 {
   min-height: 150px;
-
+  /*  */
   background-color: pink;
 }
+
+.pink {
+  background-color: pink;
+}
+
 .box-3 {
   min-height: 150px;
   background-color: green;
 }
+
+.green {
+  background-color: green;
+}
+
 .box-4 {
   min-height: 150px;
   background-color: peru;
 }
+
+.peru {
+  background-color: peru;
+}
+
 .box-5 {
   min-height: 150px;
+  background-color: purple;
+}
+.box-6 {
+  min-height: 150px;
+  background-color: grey;
+}
+
+.purple {
   background-color: purple;
 }

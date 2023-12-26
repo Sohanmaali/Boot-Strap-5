@@ -5,22 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Gride</title>
   </head>
   <body>
-    <!-- <div class="contener">
-      <div class="row">
-        <div class="box-1 col-sm-12 col-md-6 col-lg-3">box-1</div>
-        <div class="box-2 col-sm-12 col-md-6 col-lg-3">box-1</div>
-        <div class="box-3 col-sm-12 col-md-6 col-lg-3">box-1</div>
-        <div class="box-4 col-sm-12 col-md-6 col-lg-3">box-2</div>
-      </div>
-    </div> -->
+    <h2 class="text-primary text-center">Auto-layout columns</h2>
     <div class="contener">
       <div class="row">
-        <div class="col-6 box-1">box-1</div>
-        <div class="col-4 box-2">box-2</div>
-        <div class="col-2 box-3">box-3</div>
+        <div class="box-1 col">box-1</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="contener">
+      <div class="row">
+        <div class="box-1 col">box-1</div>
+        <div class="box-2 col">box-2</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="contener">
+      <div class="row">
+        <div class="box-1 col">box-1</div>
+        <div class="box-2 col">box-2</div>
+        <div class="box-3 col">box-3</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="contener">
+      <div class="row">
+        <div class="col box-1">box-1</div>
+        <div class="col box-2">box-2</div>
+        <div class="col box-3">box-3</div>
+        <div class="box-4 col">box-2</div>
+      </div>
+    </div>
+    <!-- ============================================== -->
+    <h2 class="text-primary text-center">Setting one column width</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col box-1">box-1</div>
+        <div class="col-6 box-2">box-2</div>
+        <div class="col box-3">box-3</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col box-1">box-1</div>
+        <div class="col-5 box-2">box-2</div>
+        <div class="col box-3">box-3</div>
+      </div>
+    </div>
+    <br /><br />
+    <h2 class="text-primary text-center">Mix and match</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 box-1">.col-md-8</div>
+        <div class="col-md-4 box-2">.col-6 .col-md-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 box-1">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 box-2">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 box-3">.col-6 .col-md-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-6 box-1">.col-6</div>
+        <div class="col-6 box-2">.col-6</div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- =================================================== -->
+    <h2 class="text-primary text-center">Row columns</h2>
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col box-1">.col-1</div>
+        <div class="col box-2">.col-2</div>
+        <div class="col box-3">.col-3</div>
+        <div class="col box-4">.col-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col box-1">.col-1</div>
+        <div class="col box-2">.col-2</div>
+        <div class="col box-3">.col-3</div>
+        <div class="col box-3">.col-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row row-cols-auto">
+        <div class="col box-1">.col-1</div>
+        <div class="col box-2">.col-2</div>
+        <div class="col box-3">.col-3</div>
+        <div class="col box-4">.col-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row row-cols-4">
+        <div class="col box-1">.col-1</div>
+        <div class="col box-2">.col-2</div>
+        <div class="col box-3">.col-3</div>
+        <div class="col box-4">.col-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row row-cols-4">
+        <div class="col-4 box-1">.col-1</div>
+        <div class="col box-2">.col-2</div>
+        <div class="col-6 box-3">.col-3</div>
+        <div class="col box-4">.col-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
+        <div class="col-4 box-1">row-cols-sm-1 row-cols-md-4</div>
+        <div class="col box-2">row-cols-sm-1 row-cols-md-4</div>
+        <div class="col-6 box-3">row-cols-sm-1 row-cols-md-4</div>
+        <div class="col box-4">row-cols-sm-1 row-cols-md-4</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="container">
+      <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col box-1">col-1</div>
+        <div class="col box-2">col-2</div>
+        <div class="col box-3">col-3</div>
+        <div class="col box-4">col-4</div>
+        <div class="col box-5">col-5</div>
+        <div class="col box-6">col-6</div>
+        <div class="col-4 col-lg-2 box-1">col-7</div>
+        <div class="col-4 col-lg-2 box-2">col-8</div>
+        <div class="col-4 col-lg-2 box-3">col-9</div>
+        <div class="col-4 col-lg-2 box-4">col-10</div>
+        <div class="col-4 col-lg-2 box-5">col-11</div>
+        <div class="col-4 col-lg-2 box-6">col-12</div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- ========================================= -->
+    <h2 class="text-primary text-center">Nesting</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 box-1">Level 1: .col-sm-3</div>
+        <div class="col-sm-9 box-2">
+          <div class="row">
+            <div class="col-8 col-sm-6 box-3">Level 2: .col-8 .col-sm-6</div>
+            <div class="col-4 col-sm-6 box-4">Level 2: .col-4 .col-sm-6</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
