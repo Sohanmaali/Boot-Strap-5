@@ -1,0 +1,32 @@
+.first-section {
+  background-color: #f9fafa;
+  /* background-color: green; */
+}
+.btn-color {
+  background-color: #f89646;
+}
+.btn-color-1 {
+  background-color: #6bb7be;
+}
+.btn-color:hover {
+  border: 1px solid #f89646;
+  color: #f89646;
+}
+.btn-color-1:hover {
+  border: 1px solid #6bb7be;
+  color: #6bb7be;
+}
+.card-bg-color {
+  background-color: #f9fafa;
+}
+
+.my-img {
+  height: 250px;
+  width: 150px;
+}
+.red {
+  background-color: red;
+}
+.footer-link:hover {
+  color: yellow;
+}
